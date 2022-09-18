@@ -1,0 +1,40 @@
+{
+    "counties": [
+        {
+            "id": "1",
+            "name": "Turkiye"
+        },
+        {
+            "id": "2",
+            "name": "Amerika"
+        }
+    ],
+    "cities": [
+        {
+            "id": "1",
+            "country_id": "1",
+            "name": "Ankara"
+        },
+        {
+            "id": "2",
+            "country_id": "1",
+            "name": "İstanbul"
+        },
+        {
+            "id": "3",
+            "country_id": "1",
+            "name": "İzmir"
+        },
+        {
+            "id": "4",
+            "country_id": "2",
+            "name": "New York"
+        },
+        {
+            "id": "5",
+            "country_id": "2",
+            "name": "Washington"
+        }
+
+    ]
+}
