@@ -1,11 +1,13 @@
 import { useState } from "react";
+import useCityList from "../hooks/useCityList";
 import useCountryList from "../hooks/useCountryList";
 import Select from "./Select";
 
 const Component1 = () => {
+  const [countryId, setCountryId] = useState();
   const [countries] = useCountryList();
 
-  const [countryId, setCountryId] = useState();
+  const [cities] = useCityList(countryId);
 
   const countryChangeEvent = (e) => {
     setCountryId(e.target.value);
@@ -25,7 +27,7 @@ const Component1 = () => {
         labelText="Şehir"
         nameText="city"
         idValue="city"
-        contentList={[]}
+        contentList={cities}
       ></Select>
     </>
   );
